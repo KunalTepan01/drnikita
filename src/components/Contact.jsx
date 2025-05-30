@@ -52,7 +52,7 @@ const ContactUsSection = () => {
                 <div className="space-y-6">
                     <iframe
                         className="w-full rounded-xl"
-                        src="https://www.google.com/maps?q=52.3731,4.8922&z=14&output=embed"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26332.85667293031!2d74.59976088455211!3d26.502210142395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396be7072c888ff5%3A0x545a9ee03d53cdd5!2sDR.%20NIKITA%20SHARMA!5e1!3m2!1sen!2sin!4v1748585136117!5m2!1sen!2sin"
                         height="300"
                         allowFullScreen
                         loading="lazy"
@@ -60,26 +60,26 @@ const ContactUsSection = () => {
                     ></iframe>
 
                     <div className="text-gray-800 space-y-1">
-                        <h2 className="text-lg font-semibold">Dentica Clinic Center</h2>
-                        <p>Lewistika Panda | Block D No.88 Dermawartani, Clasan. South Tangerang.</p>
+                        <h2 className="text-lg font-semibold">DR. NIKITA SHARMA</h2>
+                        <p>B-455, PANCHSHEEL, B Block, Panchsheel Nagar, Ajmer, Rajasthan</p>
                         <div className="flex items-center space-x-2">
                             <span>📞</span>
-                            <p>4733378901 (Call Center)</p>
+                            <p>+91 82097 88869 (Call Center)</p>
                         </div>
                         <div className="flex items-center space-x-2">
                             <span>📞</span>
-                            <p>4733378902 (Customer Support)</p>
+                            <p>+91 82097 88869 (Customer Support)</p>
                         </div>
                         <div className="flex items-center space-x-2">
                             <span>📧</span>
-                            <a href="mailto:staff@dentica.id" className="text-blue-700 underline hover:text-blue-800">staff@dentica.id</a>
+                            <a href="mailto:staff@dentica.id" className="text-blue-700 underline hover:text-blue-800">dr.nikita.sharma@example.com</a>
                         </div>
                     </div>
                 </div>
 
                 {/* Contact Form */}
                 <form className="bg-white rounded-2xl p-6 space-y-4 shadow-lg">
-                   <h3 className="text-xl font-bold text-black">Send us a message</h3>
+                    <h3 className="text-xl font-bold text-black">Send us a message</h3>
 
                     <input
                         type="text"
@@ -131,7 +131,7 @@ const ContactUsSection = () => {
                                             className="text-[#2EC4B6] w-7 h-7 flex-shrink-0 mt-0.5" // MODIFIED: Color and Size
                                         >
                                             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                                           
+
                                         </svg>
                                         <p className="text-sm text-gray-600">{clinic.address}</p>
                                     </div>
@@ -148,12 +148,12 @@ const ContactUsSection = () => {
                                     <div className="flex items-start space-x-3">
                                         {/* Replaced emoji with SVG icon */}
                                         <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          viewBox="0 0 24 24"
-                                          fill="currentColor"
-                                          className="text-[#2EC4B6] w-6 h-6 flex-shrink-0 mt-0.5" // Using #2EC4B6 color and w-6 h-6 size
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            className="text-[#2EC4B6] w-6 h-6 flex-shrink-0 mt-0.5" // Using #2EC4B6 color and w-6 h-6 size
                                         >
-                                          <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                                         </svg>
                                         <div className="text-sm text-gray-600">
                                             <p>{clinic.phone1}</p>
@@ -161,15 +161,15 @@ const ContactUsSection = () => {
                                         </div>
                                     </div>
 
-                                     <div className="flex items-start space-x-3">
+                                    <div className="flex items-start space-x-3">
                                         {/* Replaced emoji with SVG icon */}
                                         <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          viewBox="0 0 24 24"
-                                          fill="currentColor"
-                                          className="text-[#2EC4B6] w-6 h-6 flex-shrink-0 mt-0.5" // Using #2EC4B6 color and w-6 h-6 size
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            className="text-[#2EC4B6] w-6 h-6 flex-shrink-0 mt-0.5" // Using #2EC4B6 color and w-6 h-6 size
                                         >
-                                          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                                         </svg>
                                         <a href={`mailto:${clinic.email}`} className="text-sm text-[#007B8A] hover:text-[#005f69] hover:underline">
                                             {clinic.email}
