@@ -106,7 +106,7 @@ const PatientReviews = () => {
   return (
     <div className="w-full  px-4 py-8 md:py-12 lg:py-16 relative">
       {/* Header with higher z-index */}
-      <div className="text-center mb-8 md:mb-12 lg:mb-16 relative z-30">
+      <div className="text-center mb-8 md:mb-12 lg:mb-10 relative z-30">
         <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-4 lg:mb-6 text-black leading-tight font-playfair">
           Patient Reviews
         </h2>
@@ -118,54 +118,9 @@ const PatientReviews = () => {
       </div>
 
       {/* Carousel with controlled z-index */}
-      <div className="relative z-20">
-        <Carousel
-          responsive={responsive}
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={5000}
-          customDot={<CustomDot />}
-          customRightArrow={<CustomRightArrow />}
-          customLeftArrow={<CustomLeftArrow />}
-          removeArrowOnDeviceType={["mobile"]}
-          deviceType="desktop"
-          itemClass="px-2 md:px-4"
-          containerClass="z-20"
-          className="pb-12"
-        >
-          {reviews.map((review) => (
-            <div 
-              key={review.id}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl p-6 md:p-8 h-full transition-all duration-500 transform hover:-translate-y-1"
-            >
-              <div className="relative">
-                <div className="absolute -top-2 -left-2 opacity-10">
-                  <Quote size={60} className="text-teal-500" />
-                </div>
-                
-                <div className="flex flex-col items-center text-center">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 md:w-6 md:h-6 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  
-                  <p className="text-base md:text-lg text-gray-700 italic mb-6 relative z-10">
-                    "{review.comment}"
-                  </p>
-                  
-                  <div className="space-y-2">
-                    <p className="font-semibold text-gray-800 text-lg md:text-xl">{review.name}</p>
-                    <div className="h-1 w-16 md:w-20 mx-auto bg-gradient-to-r from-teal-500 to-teal-300 rounded-full mb-2"></div>
-                    <p className="text-teal-500 font-medium text-sm md:text-base">{review.procedure}</p>
-                    <p className="text-gray-500 text-xs md:text-sm">{review.date}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </Carousel>
-      </div>
+       <div className="max-w-8xl mx-auto px-4 sm:px-8 lg:px-16"> {/* Adjusted padding */}
+    <div className="elfsight-app-241c2b24-46f2-47c7-8eb7-3f7cb2f62037" data-elfsight-app-lazy></div>
+</div>
     </div>
   );
 };

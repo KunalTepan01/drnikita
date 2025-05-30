@@ -5,32 +5,32 @@ import React from "react";
 const ContactUsSection = () => {
     const clinicsData = [
         {
-            name: "Sansori Clinic",
+            name: "Nivik Smile Care",
             // Replace with your actual image path
-            imageSrc: "/images/contact1.avif",
-            address: "Lewistika Panda | Block D No.88 Dermawartani, Clasan. South Tangerang.",
-            phone1: "4733378901 (Call Center)",
-            phone2: "4733378902 (Customer Support)",
-            email: "staff@dentica.id"
+            imageSrc: "/images/clinics.jpeg",
+            address: "B-455 PANCHSHEELB BLOCK, AJMER",
+            phone1: "+91 82097 88869 (Call Center)",
+            phone2: "+91 82097 88869 (Customer Support)",
+            email: "dr.nikita.sharma@example.com"
         },
-        {
-            name: "Denmica Clinic",
-            // Replace with your actual image path
-            imageSrc: "/images/contact1.avif",
-            address: "Lewistika Panda | Block D No.88 Dermawartani, Clasan. South Tangerang.",
-            phone1: "4733378901 (Call Center)",
-            phone2: "4733378902 (Customer Support)",
-            email: "staff@dentica.id"
-        },
-        {
-            name: "Mantonia Clinic",
-            // Replace with your actual image path
-            imageSrc: "/images/contact1.avif",
-            address: "Lewistika Panda | Block D No.88 Dermawartani, Clasan. South Tangerang.",
-            phone1: "4733378901 (Call Center)",
-            phone2: "4733378902 (Customer Support)",
-            email: "staff@dentica.id"
-        }
+        // {
+        //     name: "Denmica Clinic",
+        //     // Replace with your actual image path
+        //     imageSrc: "/images/contact2.avif",
+        //     address: "Lewistika Panda | Block D No.88 Dermawartani, Clasan. South Tangerang.",
+        //     phone1: "4733378901 (Call Center)",
+        //     phone2: "4733378902 (Customer Support)",
+        //     email: "staff@dentica.id"
+        // },
+        // {
+        //     name: "Mantonia Clinic",
+        //     // Replace with your actual image path
+        //     imageSrc: "/images/contact3.avif",
+        //     address: "Lewistika Panda | Block D No.88 Dermawartani, Clasan. South Tangerang.",
+        //     phone1: "4733378901 (Call Center)",
+        //     phone2: "4733378902 (Customer Support)",
+        //     email: "staff@dentica.id"
+        // }
     ];
 
     return (
@@ -63,15 +63,36 @@ const ContactUsSection = () => {
                         <h2 className="text-lg font-semibold">DR. NIKITA SHARMA</h2>
                         <p>B-455, PANCHSHEEL, B Block, Panchsheel Nagar, Ajmer, Rajasthan</p>
                         <div className="flex items-center space-x-2">
-                            <span>📞</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                className="text-[#000000] w-6 h-6 flex-shrink-0 mt-0.5" // Using #2EC4B6 color and w-6 h-6 size
+                            >
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                            </svg>
                             <p>+91 82097 88869 (Call Center)</p>
                         </div>
                         <div className="flex items-center space-x-2">
-                            <span>📞</span>
+                             <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                className="text-[#000000] w-6 h-6 flex-shrink-0 mt-0.5" // Usingrgb(255, 255, 255) color and w-6 h-6 size
+                            >
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                            </svg>
                             <p>+91 82097 88869 (Customer Support)</p>
                         </div>
                         <div className="flex items-center space-x-2">
-                            <span>📧</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                className="text-[#000000] w-6 h-6 flex-shrink-0 mt-0.5" // Using #2EC4B6 color and w-6 h-6 size
+                            >
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
                             <a href="mailto:staff@dentica.id" className="text-blue-700 underline hover:text-blue-800">dr.nikita.sharma@example.com</a>
                         </div>
                     </div>
@@ -110,11 +131,11 @@ const ContactUsSection = () => {
                 <div className="max-w-6xl mx-auto">
                     {/* If you have a specific serif font like in the image, apply its class here */}
                     <h2 className="text-4xl md:text-5xl font-regular text-black text-center mb-16 font-playfair">
-                        Visit Our Clinics
+                        Visit Our Clinic
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
                         {clinicsData.map((clinic, index) => (
-                            <div key={index} className="bg-white rounded-3xl shadow-xl p-5 flex flex-col space-y-4 transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                            <div key={index} className="bg-white rounded-3xl shadow-xl p-10 flex flex-col space-y-4 transform hover:scale-105 transition-transform duration-300 ease-in-out">
                                 <img
                                     src={clinic.imageSrc}
                                     alt={clinic.name}

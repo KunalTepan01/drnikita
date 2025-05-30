@@ -6,11 +6,11 @@ const AboutUsSection = () => {
     return (
         <>
             <div className="flex flex-col items-center justify-center text-center px-4 py-12">
-                <h1 className="text-5xl font-bold text-black mb-0">Dentist</h1>
+                <h1 className="text-5xl font-bold text-black mb-0">Blog</h1>
                 <div className="flex items-center space-x-2 text-gray-600 text-base mb-6">
                     <span className="text-black">Home</span>
                     <span>/</span>
-                    <span className="text-gray-500">Dentist</span>
+                    <span className="text-gray-500">Blog</span>
                 </div>
             </div>
 

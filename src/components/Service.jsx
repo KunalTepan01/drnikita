@@ -1,113 +1,133 @@
 "use client";
 
 import React from "react";
+import Image from "next/image"; // Import next/image (currently unused, but kept if you plan to use it)
+
+// Data for clinic cards - define it outside if it's for a section within ServiceUsSection,
+// or inside if ServiceUsSection will directly map over it.
+// For now, let's assume you might want to add a "Visit Our Clinics" section to this page later.
+const clinicsData = [
+    {
+        name: "General Dentistry",
+        imageSrc: "/images/service1.jpeg", // IMPORTANT: Use unique images for each clinic
+        discription: "Lewistika Panda | Block D No.88 Dermawartani, Clasan. South Tangerang.",
+        // phone1: "4733378901 (Call Center)",
+        // phone2: "4733378902 (Customer Support)",
+        // email: "staff@dentica.id"
+    },
+    {
+        name: "Cosmetic Dentistry",
+        imageSrc: "/images/service2.jpeg", // IMPORTANT: Use unique images for each clinic
+        discription: "Lewistika Panda | Block D No.88 Dermawartani, Clasan. South Tangerang.",
+        // phone1: "4733378901 (Call Center)",
+        // phone2: "4733378902 (Customer Support)",
+        // email: "staff@dentica.id"
+    },
+    {
+        name: "Restorative Dentistry",
+        imageSrc: "/images/service3.jpeg", // IMPORTANT: Use unique images for each clinic
+        discription: "Lewistika Panda | Block D No.88 Dermawartani, Clasan. South Tangerang.",
+        // phone1: "4733378901 (Call Center)",
+        // phone2: "4733378902 (Customer Support)",
+        // email: "staff@dentica.id"
+    },
+    {
+        name: "Orthodontic Services",
+        imageSrc: "/images/orthodontic.jpeg", // IMPORTANT: Use unique images for each clinic
+        discription: "Lewistika Panda | Block D No.88 Dermawartani, Clasan. South Tangerang.",
+        // phone1: "4733378901 (Call Center)",
+        // phone2: "4733378902 (Customer Support)",
+        // email: "staff@dentica.id"
+    },
+    {
+        name: "Preventive Care",
+        imageSrc: "/images/Preventive Care.jpeg", // IMPORTANT: Use unique images for each clinic
+        discription: "Lewistika Panda | Block D No.88 Dermawartani, Clasan. South Tangerang.",
+        // phone1: "4733378901 (Call Center)",
+        // phone2: "4733378902 (Customer Support)",
+        // email: "staff@dentica.id"
+    },
+    {
+        name: "Gum & Periodontal Treatment",
+        imageSrc: "/images/Gum.jpeg", // IMPORTANT: Use unique images for each clinic
+        discription: "Deep cleaning (scaling and root planing) ,Gum infection treatment ,Periodontal maintenance"
+        // phone1: "4733378901 (Call Center)",
+        // phone2: "4733378902 (Customer Support)",
+        // email: "staff@dentica.id"
+    }
+];
+
 const ServiceUsSection = () => {
     return (
         <>
+            {/* Header Section for "Our Service" */}
             <div className="flex flex-col items-center justify-center text-center px-4 py-12">
-                <h1 className="text-5xl font-bold text-black mb-0">Dentist</h1>
+                <h1 className="text-5xl font-bold text-black mb-0">Our Service</h1>
                 <div className="flex items-center space-x-2 text-gray-600 text-base mb-6">
                     <span className="text-black">Home</span>
                     <span>/</span>
-                    <span className="text-gray-500">Dentist</span>
+                    <span className="text-gray-500">Our Service</span>
                 </div>
             </div>
 
-            {/* Section 2: Our Dentists */}
-            <div className="py-12 px-4 sm:px-6 md:px-8 lg:px-12 bg-white max-w-7xl mx-auto">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 justify-items-center">
-                    {[
-                        {
-                            name: "Reza Mahendra",
-                            specialty: "Dentist",
-                            image: "/images/expert1.avif",
-                        },
-                        {
-                            name: "Merliana Sari",
-                            specialty: "Dentist",
-                            image: "/images/expert1.avif",
-                        },
-                        {
-                            name: "Daniel Thompson",
-                            specialty: "Dentist",
-                            image: "/images/expert1.avif",
-                        },
-                        {
-                            name: "James Brown",
-                            specialty: "Dentist",
-                            image: "/images/expert1.avif",
-                        },
-                        {
-                            name: "David Anderson",
-                            specialty: "Dentist",
-                            image: "/images/expert1.avif",
-                        },
-                    ].map((doctor, index) => (
-                        <div
-                            key={index}
-                            className="bg-[#caf4ef] rounded-3xl px-6 py-10 w-full max-w-xs sm:max-w-sm flex flex-col items-center text-center shadow-md"
-                        >
-                            <img
-                                src={doctor.image}
-                                alt={doctor.name}
-                                className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover mb-6"
-                            />
-                            <h3 className="font-bold text-xl sm:text-2xl text-black">{doctor.name}</h3>
-                            <p className="text-gray-600 text-base sm:text-lg">{doctor.specialty}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
+            {/* Placeholder for where you might add actual service content 
+                or the "Visit Our Clinics" section if it belongs here.
+                Example of adding the "Visit Our Clinics" section:
+            */}
 
-            {/* Section 4: Contact Cards */}
-            {/* <div className="bg-[#6f4a63] rounded-3xl py-10 px-4 sm:px-6 md:px-10 lg:px-20 max-w-7xl mx-auto my-10"> */}
-            <div className="bg-[#6f4a63] rounded-3xl py-8 px-5 sm:px-6 md:px-10 lg:px-20 max-w-7xl mx-5 sm:mx-auto my-12">
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
-                    {[
-                        {
-                            title: "EMERGENCY CALL",
-                            number: "331–870–6671",
-                        },
-                        {
-                            title: "MAKE AN APPOINTMENT",
-                            number: "331–870–6672",
-                        },
-                        {
-                            title: "SERVICE AREA",
-                            number: "331–870–6673",
-                        },
-                    ].map((item, i) => (
-                        <div
-                            key={i}
-                            className="bg-[#e3eaec] w-full rounded-xl flex items-center gap-4 sm:gap-6 px-4 sm:px-6 py-6"
-                        >
-                            <div className="bg-white rounded-full p-3 sm:p-4 shrink-0">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="26"
-                                    height="26"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="#00BCD4"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                >
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.07 8.63 19.79 19.79 0 0 1 6.08 2.18 2 2 0 0 1 9 3.24l2 2a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45l2 2a2 2 0 0 1 1.06 1.73z" />
-                                </svg>
+            {/* "Visit Our Clinics" Section (Example Integration) */}
+            <div className="py-16 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-6xl mx-auto">
+                    
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                        {clinicsData.map((clinic, index) => (
+                            <div key={index} className="bg-white rounded-3xl shadow-xl p-5 flex flex-col space-y-4 transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                                <Image // Using Next.js Image component
+                                    src={clinic.imageSrc}
+                                    alt={clinic.name}
+                                    width={400} // Provide appropriate width for aspect ratio
+                                    height={300} // Provide appropriate height for aspect ratio
+                                    className="w-full h-56 object-cover rounded-2xl"
+                                />
+                                <div className="flex flex-col space-y-3 flex-grow">
+                                    <h3 className="text-2xl font-bold text-black">{clinic.name}</h3>
+                                    <div className="flex items-start space-x-3">
+                                        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-[#2EC4B6] w-7 h-7 flex-shrink-0 mt-0.5">
+                                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                        </svg> */}
+                                        <p className="text-sm text-gray-600">{clinic.discription}</p>
+                                    </div>
+                                    <div className="flex items-start space-x-3">
+                                        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-[#2EC4B6] w-6 h-6 flex-shrink-0 mt-0.5">
+                                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                        </svg> */}
+                                        <div className="text-sm text-gray-600">
+                                            <p>{clinic.phone1}</p>
+                                            <p>{clinic.phone2}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start space-x-3">
+                                        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-[#2EC4B6] w-6 h-6 flex-shrink-0 mt-0.5">
+                                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                        </svg> */}
+                                        <a href={`mailto:${clinic.email}`} className="text-sm text-[#007B8A] hover:text-[#005f69] hover:underline">
+                                            {clinic.email}
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="text-left">
-                                <p className="text-sm text-gray-500 font-poppins">{item.title}</p>
-                                <h3 className="text-base sm:text-lg md:text-xl font-bold text-black">{item.number}</h3>
-                            </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
+
+
+
+
                 </div>
             </div>
+
         </>
     );
 };
 
 export default ServiceUsSection;
-
