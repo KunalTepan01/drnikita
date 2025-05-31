@@ -33,7 +33,7 @@ const clinicsData = [
     },
     {
         name: "Orthodontic Services",
-        imageSrc: "/images/orthodontic.jpeg", // IMPORTANT: Use unique images for each clinic
+        imageSrc: "/images/Orthodontic1.jpeg", // IMPORTANT: Use unique images for each clinic
         discription: "Lewistika Panda | Block D No.88 Dermawartani, Clasan. South Tangerang.",
         // phone1: "4733378901 (Call Center)",
         // phone2: "4733378902 (Customer Support)",
