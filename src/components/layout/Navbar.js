@@ -66,7 +66,7 @@ export default function Navbar() {
       
       {/* Main Navbar */}
       <div className="bg-white shadow-md py-0">
-        <div className="container mx-auto px-1 md:px-6 flex justify-between items-center">
+        <div className="container mx-auto px-1 ml-1  md:px-6 flex justify-between items-center">
           {/* Logo */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -98,7 +98,7 @@ export default function Navbar() {
                   ABOUT US
                 </Link>
                 <Link href="/dentists" className="text-gray-700 font-medium hover:text-[#2EC4B6] transition-colors">
-                  OUR DENTISTS
+                  BLOGS
                 </Link>
                 <Link href="/services" className="text-gray-700 font-medium hover:text-[#2EC4B6] transition-colors">
                   SERVICES
@@ -113,7 +113,7 @@ export default function Navbar() {
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
-                  <Link href="/appointment" className="bg-[#2EC4B6] text-white px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors shadow-md">
+                  <Link href="/appointment" className="bg-[#2EC4B6] text-white px-6 py-2 ml-0 mr--20 rounded-full font-medium hover:bg-opacity-90 transition-colors shadow-md">
                     MAKE AN APPOINTMENT
                   </Link>
                 </motion.div>
