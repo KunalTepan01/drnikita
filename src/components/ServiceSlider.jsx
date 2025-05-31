@@ -13,42 +13,43 @@ import "swiper/css/pagination";
 
 // Data from your ServiceUsSection
 const clinicsData = [
-    {
-        name: "General Dentistry",
-        slug: "general", // Updated slug
-        imageSrc: "/images/service1.jpeg",
-        discription: "Routine dental care including cleanings, exams, fillings, and preventive treatments to keep your smile healthy and strong."
-    },
-    {
-        name: "Orthodontic Services",
-        slug: "orthodontic", // Updated slug
-        imageSrc: "/images/Orthodontic1.jpeg",
-        discription: "Correcting misaligned teeth and jaws using braces, aligners, and other devices for a healthier, straighter smile."
-    },
-    {
-        name: "Cosmetic Dentistry",
-        slug: "cosmetic", // Updated slug
-        imageSrc: "/images/service2.jpeg",
-        discription: "Enhancing the appearance of your smile through teeth whitening, veneers, bonding, and other aesthetic treatments."
-    },
-    {
-        name: "Restorative Dentistry",
-        slug: "restorative", // Updated slug
-        imageSrc: "/images/service3.jpeg",
-        discription: "Restoring damaged or missing teeth to improve function, appearance, and oral health using fillings, crowns, bridges, and implants."
-    },
-    {
-        name: "Preventive Care",
-        slug: "preventive", // Updated slug
-        imageSrc: "/images/Preventive Care.jpeg",
-        discription: "Routine checkups, cleanings, and early treatments to maintain oral health and prevent dental issues."
-    },
-    {
-        name: "Gum & Periodontal Treatment",
-        slug: "gum", // Updated slug
-        imageSrc: "/images/Gum.jpeg",
-        discription: "Deep cleaning (scaling and root planing), Gum infection treatment, Periodontal maintenance"
-    }
+  {
+    name: "Orthodontic Services",
+    slug: "orthodontic", // Updated slug
+    imageSrc: "/images/Orthodontic1.jpeg",
+    discription: "Correcting misaligned teeth and jaws using braces, aligners, and other devices for a healthier, straighter smile."
+  },
+  {
+    name: "General Dentistry",
+    slug: "general", // Updated slug
+    imageSrc: "/images/service1.jpeg",
+    discription: "Routine dental care including cleanings, exams, fillings, and preventive treatments to keep your smile healthy and strong."
+  },
+
+  {
+    name: "Cosmetic Dentistry",
+    slug: "cosmetic", // Updated slug
+    imageSrc: "/images/service2.jpeg",
+    discription: "Enhancing the appearance of your smile through teeth whitening, veneers, bonding, and other aesthetic treatments."
+  },
+  {
+    name: "Restorative Dentistry",
+    slug: "restorative", // Updated slug
+    imageSrc: "/images/service3.jpeg",
+    discription: "Restoring damaged or missing teeth to improve function, appearance, and oral health using fillings, crowns, bridges, and implants."
+  },
+  {
+    name: "Preventive Care",
+    slug: "preventive", // Updated slug
+    imageSrc: "/images/Preventive Care.jpeg",
+    discription: "Routine checkups, cleanings, and early treatments to maintain oral health and prevent dental issues."
+  },
+  {
+    name: "Gum & Periodontal Treatment",
+    slug: "gum", // Updated slug
+    imageSrc: "/images/Gum.jpeg",
+    discription: "Deep cleaning (scaling and root planing), Gum infection treatment, Periodontal maintenance"
+  }
 ];
 
 // Animation variants for the entire slider section
@@ -72,7 +73,7 @@ const fadeInUp = {
 
 const ServiceSlider = () => {
   return (
-    <motion.section 
+    <motion.section
       className="py-12 md:py-20 bg-gray-50" // Added a light background for better visual separation
       variants={sliderSectionVariants}
       initial="hidden"

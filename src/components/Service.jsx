@@ -8,7 +8,7 @@ const clinicsData = [
     {
         name: "Orthodontic Services",
         slug: "orthodontic",
-        imageSrc: "/images/service2.jpeg",
+        imageSrc: "/images/orthodontic.jpeg",
         discription: "Correcting misaligned teeth and jaws using braces, aligners, and other devices for a healthier, straighter smile."
     },
     {
